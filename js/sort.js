@@ -1,18 +1,34 @@
 // function to sort filmList by name
-function sortByName() {
-    filmList.sort((a, b) => {
-      let filmA = a.filmName.toUpperCase();
-      let filmB = b.filmName.toUpperCase();
+function sortByName(people) {
+    people.sort((a, b) => {
+      let personA = a.lastName.toUpperCase();
+      let personB = b.lastName.toUpperCase();
 
-      if (filmA < filmB) {
+      if (personA < personB) {
         return -1;
       }
 
-      if (filmA > filmB) {
+      if (personA > personB) {
         return 1;
       }
 
       return 0;
     })
+}
 
+function sortByAge(people) {
+    persons.sort((a, b) => {
+      let personA = a.age;
+      let personB = b.age;
+
+      if (personA < personB) {
+        return -1;
+      }
+
+      if (personA > personB) {
+        return 1;
+      }
+
+      return 0;
+    })
 }

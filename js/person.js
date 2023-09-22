@@ -4,10 +4,10 @@ class Person {
       this.lastName = lastName;
       this. age =  age;
     }
-  }
+}
 
-  const persons = [];
+const persons = [];
 
-  persons.push(new Person("Mathias", "Ulrich", 28));
+persons.push(new Person("Mathias", "Ulrich", 28));
 
-  console.log(persons);
+console.log(persons);
