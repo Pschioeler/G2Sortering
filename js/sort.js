@@ -1,4 +1,4 @@
-// function to sort filmList by name
+// function sortByName: takes an array and sorts its elements by last name, an possible first name
 function sortByName(people) {
     people.sort((a, b) => {
       let personALS = a.lastName.toLowerCase();
@@ -39,22 +39,3 @@ function sortByAgeDifference(people, x) {
   })
 }
 
-/* old sort by age
-
-function sortByAge(people) {
-    persons.sort((a, b) => {
-      let personAA = a.age;
-      let personBA = b.age;
-
-      if (personAA < personBA) {
-        return -1;
-      }
-
-      if (personAA > personBA) {
-        return 1;
-      }
-
-      return 0;
-    })
-}
-*/
