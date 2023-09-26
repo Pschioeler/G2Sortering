@@ -8,4 +8,5 @@ searchBar.onkeyup = () => {
     });
     console.log(filteredPersons);
     sortByName(filteredPersons);
+    print(filteredPersons);
 }

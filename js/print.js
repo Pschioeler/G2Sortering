@@ -1,7 +1,9 @@
 let display = document.getElementById("displayList");
-
-for (x in filteredPersons) {
-    const paragraph = document.createElement('p');
-    paragraph.textContent = `Name: ${person.firstName} ${person.LastName}, Age: ${person.LastName}`;
-    display.appendChild(paragraph);
+function print(param){
+    display.innerHTML = '';
+    for (x of param) {
+        const paragraph = document.createElement('p');
+        paragraph.textContent = `Name: ${x.firstName} ${x.lastName}, Age: ${x.age}`;
+        display.appendChild(paragraph);
+    }
 }
