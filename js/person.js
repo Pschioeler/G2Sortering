@@ -23,6 +23,8 @@ let addPersonButton = document.getElementById("addPerson");
 function addPerson() {
     persons.push(new Person(firstNameInput.value, lastNameInput.value, parseInt(ageInput.value, 10)));
     console.log(persons);
+    sortByName(persons);
+    print(persons);
   }
 
 //Adding function to the submit button
