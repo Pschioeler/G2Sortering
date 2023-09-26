@@ -4,12 +4,23 @@
 * {
     box-sizing: border-box;
     padding: 0;
-    color: aliceblue;
-    font-family: articulat;
+    color: var(--text-color);
+    font-family: "articulat-cf";
+}
+
+:root,
+    :root.default {
+        --primary-color: #e36a0e;
+        --secondary-color: #F68B00;
+        --tertiary-color: dodgerblue;
+        --bg-color: #2d333d;
+        --secondary-bg-color: #d5dfe3;
+        --highlight-color: black;
+        --text-color: aliceblue;
 }
 
 body {
-    background:#2d333d;
+    background:var(--bg-color);
     display: flex;
     width: fit-content;
     flex-direction: column;
@@ -19,16 +30,34 @@ body {
 button, select {
     border-radius: 5px;
     border: none;
-    background-color: #e36a0e;
+    background-color: var(--primary-color);
     padding: 8px;
 }
 button:hover {
     cursor: pointer;
-    background-color: orange;
+    background-color: var(--secondary-color);
     transition: 300ms;
 }
 
 input {
     color: black;
+    background-color: var(--secondary-bg-color);
+}
+
+select {
+    background-color: var(--tertiary-color);
+}
+
+.custom-select {
+    position: relative;
+    font-family: articulat-cf;
+}
+
+
+.custom-select-1 {
+    background-color: var(--primary-color);
+}
+.custom-select-1:hover {
+    background-color: var(--secondary-color);
 }
 
