@@ -1,0 +1,34 @@
+#search {
+    margin-bottom: 3rem;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    color: aliceblue;
+    font-family: articulat;
+}
+
+body {
+    background:#2d333d;
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    justify-content: center;
+}
+
+button, select {
+    border-radius: 5px;
+    border: none;
+    background-color: #e36a0e;
+    padding: 8px;
+}
+button:hover {
+    cursor: pointer;
+    background-color: orange;
+    transition: 300ms;
+}
+
+input {
+    color: black;
+}
+
