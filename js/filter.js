@@ -7,4 +7,5 @@ searchBar.onkeyup = () => {
         return fullName.includes(userInput);
     });
     console.log(filteredPersons);
+    sortByName(filteredPersons);
 }
