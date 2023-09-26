@@ -9,6 +9,7 @@ searchBar.onkeyup = () => {
 
     if (isNaN(Number(userInput))) { //Tjekker om brugerens input er et nummer
         dropDown.disabled = true;
+        dropDown.classList.add('disabled');
         filteredPersons = persons.filter((person) => {
             const fullName = `${person.firstName} ${person.lastName}`.toLowerCase();
             return fullName.includes(userInput);
@@ -17,6 +18,7 @@ searchBar.onkeyup = () => {
     } else {
         userInput = Number(userInput);
         dropDown.disabled = false;
+        dropDown.classList.remove('disabled');
         filteredPersons = persons.filter((person) => {
         
         switch(dropDown.value) {

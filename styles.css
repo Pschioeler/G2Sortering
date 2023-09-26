@@ -24,10 +24,15 @@ body {
     display: flex;
     width: fit-content;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+body>*{
+    width: 100%;
+    max-width: 600px;
 }
 
-button, select {
+button {
     border-radius: 5px;
     border: none;
     background-color: var(--primary-color);
@@ -44,9 +49,6 @@ input {
     background-color: var(--secondary-bg-color);
 }
 
-select {
-    background-color: var(--tertiary-color);
-}
 
 .custom-select {
     position: relative;
@@ -55,9 +57,17 @@ select {
 
 
 .custom-select-1 {
-    background-color: var(--primary-color);
+    background-color: var(--tertiary-color);
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
 }
-.custom-select-1:hover {
+
+.custom-select-1-select {
     background-color: var(--secondary-color);
 }
 
+.disabled {
+    background-color: rgb(131, 131, 131);
+    color: rgb(195, 195, 195)
+}
